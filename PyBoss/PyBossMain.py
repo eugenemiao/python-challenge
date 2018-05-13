@@ -32,7 +32,11 @@ for row in pyboss_data:
     print(new_dob)
 
 #splitting SSN and convering first 5 digits into **    
-    ssn = row["SSN"]
+    split_ssn = list(row["SSN"])
+    split_ssn[0:3] = ("*", "*", "*")
+    split_ssn[4:6] = ("*", "*")
+    joined_ssn = "".join(split_ssn)
+    
     split_ssn = ssn.split("-")
     first_ssn = split_ssn[0]
     split_ssn[0] = '***'

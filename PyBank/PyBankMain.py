@@ -60,6 +60,7 @@ greatest_decrease = min(revenue_change)
 greatest_decrease_date = month_data[revenue_change.index(greatest_decrease)]
 print("Greatest Decrease in Revenue: " + str(greatest_decrease_date) + " (" + str(greatest_decrease) + ")")
 
+### I had difficulty trying to export the PyBank information onto a text file
 """file = open("PyBank_Main_Text.txt", "w")
 
 file.write("Financial Analysis")
