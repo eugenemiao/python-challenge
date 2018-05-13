@@ -50,7 +50,7 @@ with open(file_to_output, "w") as txt_file:
         votes = candidate_votes["candidate_name"]
         vote_percentage = float(votes) / float(total_votes) * 100
 
-        #determine winning vote count and cnadidate
+        #determine winning vote count and candidate
         if(votes > winning_count):
             winning_count = votes
             winning_candidate = candidate
